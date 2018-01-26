@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: burlywood;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: block;
+    width: 100%;
+    margin: 15px;
+}
+.logo_img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.main_nav {
+    text-align: center;
+}
+.main_nav li{
+    margin: 20px;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav_item {
+  -webkit-transition: all 0.5s ease;;
+  -moz-transition: all 0.5s ease;;
+  -o-transition: all 0.5s ease;;
+  transition: all 0.5s ease;
+}
+.nav_item:hover {
+    font-size: 30px;
+}

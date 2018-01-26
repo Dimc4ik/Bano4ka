@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.left_panel {
+    width: 20%;
+    border: 1px solid black;
+    float: left;
+    height: 300px
+}
+.center_panel {
+    width: 55%;
+    border: 1px solid black;
+    float: left;
+    height: 500px
+}
+.right_panel {
+    width: 23%;
+    border: 1px solid black;
+    float: left;
+    height: 300px
+}
