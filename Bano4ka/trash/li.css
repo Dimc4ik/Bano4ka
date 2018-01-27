@@ -1,0 +1,47 @@
+
+/* скрытый текст возле подвала для сео */
+ 
+/* скрываем чекбоксы и блоки с содержанием */
+.hide, .hide + label ~ div {
+display: none; 
+}
+ 
+/* вид текста label */
+.hide + label,
+.hide:checked + label {
+    padding: 0;
+    cursor: pointer;
+}
+ 
+/* вид текста label активном переключателе */
+.hide:checked + label {
+color: red;
+border-bottom: 0;
+display: none;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+display: block; 
+}
+ 
+/* demo контейнер */
+.demo {
+margin: 5% 10%;
+line-height: 25px;
+}
+ 
+.hide + label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 4em;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #fff));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}

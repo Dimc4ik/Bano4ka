@@ -1,0 +1,12 @@
+@font-face { 
+  font-family: 'Segoe Script'; 
+  src: url('../fonts/segoesc.woff2') format('woff2'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'Segoe Print'; 
+  src: url('../fonts/segoepr.woff2') format('woff2'); 
+  font-weight: normal; 
+  font-style: normal; 
+}

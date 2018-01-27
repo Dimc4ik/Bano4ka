@@ -9,79 +9,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 a {
     text-decoration: none;
 }
-
 .wrapper {
 	width: 100%;
 	min-width: 1000px;
 }
-
-
 /* Header
 -----------------------------------------------------------------------------*/
-.header {
-	height: 350px;
-	background: #FFE680;
-}
-
-
-/* Middle
------------------------------------------------------------------------------*/
-.middle {
-	width: 100%;
-	position: relative;
-}
-.middle:after {
-	display: table;
-	clear: both;
-	content: '';
-}
-.container {
-	width: 100%;
-	float: left;
-	overflow: hidden;
-}
-.content {
-	
-}
-
-
-/* Left Sidebar
------------------------------------------------------------------------------*/
-.left-sidebar {
-	float: left;
-	width: 250px;
-	margin-left: -100%;
-	position: relative;
-}
-
-
-/* Right Sidebar
------------------------------------------------------------------------------*/
-.right-sidebar {
-	float: left;
-	width: 350px;
-	margin-left: -360px;
-	position: relative;
-	background: #FFACAA;
-}
 header {
     height: 200px;
     border-bottom: 2px solid burlywood;
 }
 body {
     font-size: 16px;
+    font-family: 'Segoe Print';
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe Script';
 }
 nav {
-    display: block;
     width: 100%;
     margin: 15px;
 }
+/*Hidden h1 for SEO*/
+.hidden {
+    display: none;
+}
+/*Main logo */
 .logo_img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     float: left;
     margin-left: 30px;
+    transition: all 2s ease-in-out;
+}
+.logo_img:hover {
+    filter: alpha (Opacity=25);/* прозрачность для IE */
+    opacity: 0.25;/* прозрачность для других браузеров */
+    transform: translate(350px,0);
+    position: relative;
 }
 .main_nav {
     text-align: center;
@@ -102,12 +68,6 @@ nav {
 }
 .what_a {
     margin-left: 30px;
-}
-.photos {
-    
-}
-.photos_img{
-    
 }
 /*Animation CSS for photo*/
 .transition-width {
@@ -130,7 +90,7 @@ nav {
 h2 {
     margin-top: 20px;
     color: burlywood;
-    transition: # 2s;
+    font-size: 30px;
 }
 .left_panel {
     width: 20%;
@@ -147,4 +107,38 @@ h2 {
     width: 23%;
     float: left;
     height: 100vw;
+}
+/*Hide text*/
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    border-bottom: 1px dotted green;
+    padding: 0;
+    color: green;
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
+
+/* demo контейнер */
+.demo {
+    margin: 5% 10%;
 }
