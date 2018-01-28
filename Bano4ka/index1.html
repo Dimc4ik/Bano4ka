@@ -45,12 +45,12 @@
                 <br>
                 <li ><a href="#present" class="nav_item button4">Баночка в Подарок
                                <br>
-                               <a href="#"class="what_a button4">Что это?</a>
+                               <a href="#what"class="nav_item button4">Что это?</a>
                     </a>
                 </li>
-                <li><a href="#order" class="nav_item button5">Цены</a></li>
-                <li><a href="#price" class="nav_item button6">Отзывы</a></li>
-                <li><a href="#" class="nav_item button7">Контакты</a></li>
+                <li><a href="#price" class="nav_item button5">Цены</a></li>
+                <li><a href="#order" class="nav_item button6">Отзывы</a></li>
+                <li><a href="#contact" class="nav_item button7">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -66,30 +66,135 @@
     <section class="center_panel">
         <main class="content">
             <section class="main_content">
-                <article class="pay">
-                    <h2 id="pay">Оплата</h2>
-                    <p class="pay_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem accusamus nostrum     similique dolorum suscipit laborum molestias, pariatur expedita, facere, necessitatibus porro     delectus id. At enim harum iusto fugit eum!
-                    </p>
+                <article class="price">
+                    <h2 id="price"><u>О цене</u></h2>
+                    <table class="price_table">
+                        <tr>
+                           <td rowspan="8" class="price_table_first">Баночка<br> обьемом</td>
+                           <td class="price_volume">200 мл</td>
+                           <td class="price_summ">42 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="price_volume">300 мл</td>
+                            <td class="price_summ">48 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="price_volume">350 мл</td>
+                            <td class="price_summ">54 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="price_volume">430 мл</td>
+                            <td class="price_summ">60 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="price_volume">480 мл</td>
+                            <td class="price_summ">60 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="price_volume">550 мл</td>
+                            <td class="price_summ">66 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="price_volume">720 мл</td>
+                            <td class="price_summ">78 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="price_volume">900 мл</td>
+                            <td class="price_summ">102 грн</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">* цена может меняться в зависимости от сложности.</td>
+                        </tr>
+                    </table>
+                    <div class="price_text">
+                        <h3>Система лояльности</h3>
+                        <em>Мы ценим наших постоянных заказчиков!</em><br>
+                        Скидка 5% - при заказе от <b>3</b> Баночек.<br>
+                        Скидка 10% - при заказе от <b>10</b> Баночек.<br>
+                        Скидка 15% - при заказе от <b>20</b> Баночек.<br>
+                        Скидка 20% - при заказе от <b>30</b> Баночек.<br>
+                    </div>
                 </article>
-                <article class="how">
-                    <h2 id="how">Как сделать заказ?</h2>
-                    <p class="how_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolorum, praesentium     sapiente sit nostrum quo deleniti, est porro odio quidem rem aperiam natus neque impedit     labore iure recusandae. Provident, expedita?
-                    </p>
+                <article class="what">
+                    <h2 id="what"> <u>О проекте </u></h2>
+                    <div class="what_text">
+                        С проблемой выбора подарка сталкивается каждый! <strong>Проект Bano4ka.dp предлагает решение!</strong><br>
+                        ❔День рождение у друга, близкого или коллеги?<br>
+                        ▪Баночка с теплыми пожеланиями и любимыми сладостями!<br>
+                        ❔День рождение любимого или годовщина?<br>
+                        ▪Баночка с признаниями в любви!<br>
+                        ❔Собираете памятные мелочи с путешествий? Билетики, камушки или стик сахара с уютной кофешки?<br>
+                        ▪Баночка для мелочей в вашем стиле!<br> 
+                        ❔Вы гурман? Любите пикантные блюда? <br>
+                        ▪Баночки для специй! Ароматно и функционально :)<br>
+                        ❔Вы кофеман? Любите уютные чаепития?<br>
+                        ▪Баночки для чая и кофе! Пусть Ваш любимый напиток живет красиво :)<br>
+                        ❔Скоро родиться малыш? <br>
+                        ▪Баночка "Мамины сокровища", сохраните дорогие сердцу моменты!<br>
+                    </div>
+                </article>
+                    <article class="how">
+                    <h2 id="how"><u>Как сделать заказ?</u></h2>
+                    <div class="how_text">
+                        Срок изготовления подарочной Баночки 2 дня при наличии необходимых расходных материалов.
+                        Особенность и индивидуальность влияет на срок выполнения!<br> 
+                        <b>Максимум 14 дней!</b> <br>
+                        Для заказа:<br>
+                        <form method='post' class='reg-form'>
+		                   <div class='form-row'>
+			                   <label for='form_fname'>Имя: </label>
+    		                   <input type='text' id='form_fname' name='first_name' required >
+  		                   </div>
+  		                   <div class='form-row'>
+    		                   <label for='form_sname'>Фамилия: </label>
+    		                   <input type='text' id='form_sname' name='second_name'>
+		                   </div>
+		                   <div class='form-row'>
+			                   <label for='form_email'>Email: </label>
+			                   <input type='email' id='form_email' name='email'required
+>
+		                   </div>
+		                   <div class='form-row'>
+			                   <label for='form_phone'>Телефон: </label>
+			                   <input type='text' id='form_phone' name='phone'required>
+		                   </div>
+		                   <div class='form-row'>
+			                   <label for='form_about'>Примечания: </label>
+			                   <textarea id='form_about' name='about' placeholder="Ваши примечания..."
+></textarea>
+		                   </div>
+		                   <div class="form-row">
+			                   <input type="submit" value='Go'>
+		                   </div>
+	                    </form>
+                        <ul class="how_list">
+<!--                            <li>(форма заказа)</li>-->
+                            <li>в Direct @bano4ka.dp</li>
+                            <li>Viber/WhatsApp 098-814-88-87</li>
+                            <li>fb.com/bano4ka.dp/</li>
+                            <li>email : bano4ka.dp@gmail.com</li>
+                        </ul>
+                    </div>
                 </article>
                 <article class="delivery">
-                    <h2 id="delivery">Доставка</h2>
-                    <p class="delivery_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vero dolor ipsum. Sapiente     quibusdam maxime sunt modi commodi ad alias eos dolorem animi distinctio! Odio expedita nisi     nulla id commodi.
-                    </p>
+                    <h2 id="delivery"><u>Доставка</u></h2>
+                    <div class="delivery_text">
+                       <h3>Способы доставки</h3>
+                       <ol class="delivery_list">
+                           <li><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Самовывоз г. Днепр, пр. Ивана Мазепи</li>
+                           <li><img src="img/NP_logo.png" alt="Новая почта" class="np_logo"> Новая Почта</li>
+                           <li><img src="img/ukrpochta_logo.png" alt="Укрпочта" class="np_logo"> Укрпочта</li>
+                       </ol>
+                       <p>Стоимость доставки 30 грн. Полная оплата заказа, + 30 грн доставка.</p>
+                    </div>
                 </article>
                 <article class="present">
-                <h2 id="present">Баночка в Подарок</h2>
-                <h3>Что это?</h3>
-                <p class="present_text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odio libero a minima     cupiditate esse eveniet, sequi facilis voluptatem ab nostrum alias magnam aspernatur provident, voluptates omnis. Nulla, hic, omnis.
-                </p>
+                <h2 id="present"><u>Баночка в Подарок</u></h2>
+                <h3>Что именно мы предлагаем</h3>
+                <div class="present_text">
+                Стеклянная баночка декорирована в технике Декупаж, покрыта защитным слоем лака!<br>
+                Стиль выполнения выбираете именно Вы!
+                </div>
                 </article>
                 <article class="order">
                    <h2 id="order">Как сделать заказ?</h2>
@@ -124,5 +229,6 @@
     </div>
 <script src="http://code.jquery.com/jquery-latest.js" defer></script>
 <script src="js/main.js" defer></script>
+<script src="https://use.fontawesome.com/3ea08430f3.js"></script>
 </body>
 </html>
