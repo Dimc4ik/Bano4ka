@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    color: burlywood;
+    color: #32585b;
+;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
@@ -17,11 +18,12 @@ a {
 -----------------------------------------------------------------------------*/
 header {
     height: 200px;
-    border-bottom: 2px solid burlywood;
+    border-bottom: 2px solid #2d0a04;
 }
 body {
     font-size: 16px;
     font-family: 'Segoe Print';
+    background: #d0dfe4;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Segoe Script';
@@ -81,8 +83,16 @@ nav {
 .main_content {
     margin: 10px;
 }
-.pay, .how, .delivery, .present, .order, .price, .reviews, .contacts, .what {
-    border-bottom: 2px solid burlywood;
+.pay, .how, .delivery, .present, .order, .reviews, .contacts, .what {
+    border-bottom: 2px solid #2d0a04;
+    height:auto;
+    padding: 10px 20px 20px 20px;
+}
+.contacts {
+    padding: 0px;
+}
+
+.price {
     height:auto;
     padding: 10px;
 }
@@ -97,27 +107,21 @@ h2 {
 }
 .center_panel {
     width: 55%;
-    border-bottom: 2px solid burlywood;
-    border-right: 2px solid burlywood;
-    border-left: 2px solid burlywood;
+    border-bottom: 2px solid #2d0a04;
+    border-right: 2px solid #2d0a04;
+    border-left: 2px solid #2d0a04;
     float: left;
 }
 .right_panel {
-    width: 23%;
+    width: 24.1%;
     float: left;
-    height: 100vw;
 }
 .price_table {
     width: 90%;
     margin: 10px;
 }
 .price_table tr td {
-    color: brown;
-    border-color: white;
-}
-.price_table tr td{
-    border:2px solid brown;
-    
+    color: #34575b;
 }
 .price_volume {
     width: 100px;
@@ -125,47 +129,47 @@ h2 {
 }
 .price_table_first {
     text-align: center;
-    font-size: 20px;
-    background: url(../img/table_bano4ka.jpg);
-    color: white !important;
+    font-size: 20px;    
     font-weight: bold;
-    opacity: 0.5;
 }
 .price_summ {
     text-align: right;
     padding: 0px 10px 0px 0px;
+    border-bottom: 2px dotted #34575b;
 }
 .how_list {
     padding: 0px 0px 0px 20px;
-}
-/*Form________________________________________________*/
-.form-row {
-	margin-bottom: 8px;
-	overflow: hidden;
-}
-.form-row input {
-	float: right;
-	height: 19px;
-	line-height: 19px;
-	margin: 0px;
-	padding: 0px 5px;
-	width: 270px;
-	border: 1px solid brown;
-}
-.reg-form {
-	width: 400px;
-	margin: 10px
-}
-#form_about {
-    color: brown;
-}
-.fa {
-    color:brown;
-    font-size: 30px;
 }
 .delivery_list {
     padding: 20px;
 }
 .np_logo {
     width: 16px;
+}
+/*Slider*/
+.slide_image {
+   height: 350px;
+    width: auto;
+}
+.slider_name {
+    text-align: center;
+    font-weight: bold;
+}
+.slider_content {
+    border: 1px groove;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: aliceblue;
+    padding: 5px;
+    height: 250px;
+    color: #2d0a04;
+    overflow: hidden;
+}
+.partners {
+    padding: 10px;
+}
+.partners_img {
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;
 }
